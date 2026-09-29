@@ -19,7 +19,7 @@ def selection_sort(lista):
         for j in range(i + 1, n):
             if lista[j] < lista[idx_min]:
                 idx_min = j
-            if idx_min != i:
+        if idx_min != i:
                 lista[i], lista[idx_min] = lista[idx_min], lista[i]
 selection_sort(notas)
 print(f"Lista de notas ordenadas mediante Selection Sort: {notas}")
@@ -32,7 +32,7 @@ for i in range(len(notas)):
     if notas [i] < minima:
         minima = notas [i]
     suma_notas += notas[i]
-    promedio = suma_notas / len(notas)
+promedio = suma_notas / len(notas)
 print(f"Nota maxima: {maxima}")
 print(f"Nota minima: {minima}")
 print(f"Promedio: {promedio:.2f}")
